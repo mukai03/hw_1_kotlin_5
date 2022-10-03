@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.hw_1_kotlin_5"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -49,4 +50,8 @@ dependencies {
     def coroutine_version = "1.6.4"
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
+
+    def dagger_hilt_version = "2.44"
+    implementation ("com.google.dagger:hilt-android:$dagger_hilt_version")
+    annotationProcessor ("com.google.dagger:hilt-compiler:$dagger_hilt_version")
 }
