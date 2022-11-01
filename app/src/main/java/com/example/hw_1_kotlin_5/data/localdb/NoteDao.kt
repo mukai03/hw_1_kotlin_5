@@ -9,11 +9,11 @@ interface NoteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun createNote(noteEntity: NoteEntity)
 
-    @Query("SELECT * FROM notes")
+    @Query("Select * from notes order by title ASC")
     suspend fun getAllNotes() : List<NoteEntity>
 
     @Update
-    suspend fun editNote(noteEntity: NoteEntity)
+    suspend fun edit(noteEntity: NoteEntity)
 
     @Delete
     suspend fun deleteNote(noteEntity: NoteEntity)

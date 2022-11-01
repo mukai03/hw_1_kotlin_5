@@ -5,12 +5,14 @@ import com.example.hw_1_kotlin_5.domain.model.Note
 
 fun Note.noteToNoteEntity() = NoteEntity(
     id=id,
-    title=title,
-    text=text
+    text=text,
+    title=title
+
 )
 
 fun NoteEntity.noteEntityToNote() = Note(
     id=id,
-    title=title,
-    text=text
+    text=text,
+    title=title
+
 )

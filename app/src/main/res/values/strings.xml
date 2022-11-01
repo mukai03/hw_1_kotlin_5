@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">hw_1_kotlin_5</string>
+    <string name="app_name">NoteApp</string>
+    <string name="text">text...</string>
+    <string name="save">save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
